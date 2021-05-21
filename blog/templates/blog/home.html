@@ -1,0 +1,45 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<style>
+    header {
+    background-color: rgb(107, 158, 100);
+    padding: 25px;
+    text-align: center;
+    font-size: 40px;
+    color:white;
+  }
+</style>
+
+<div>
+    <div class="container">
+        <header>
+            <h1 style= "color:rgb(13, 13, 14);font-style:bold;">CATEGORIES</h1>
+            <div>
+                <p>
+                    <a href="{% url 'blog-level1'%}" style="color: rgb(251, 253, 253);font-size: 20px;">LEVEL_1-GEAR</a>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <a href="{% url 'blog-level2'%}" style="color: rgb(251, 253, 253);font-size: 20px;">LEVEL_2-GEAR</a>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <a href="{% url 'blog-level3'%}" style="color: rgb(251, 253, 253);font-size: 20px;">LEVEL_3-GEAR</a>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <a href="{% url 'blog-level4'%}" style="color: rgb(251, 253, 253);font-size: 20px;">LEVEL_4-GEAR</a>
+                </p>
+            </div>
+            
+        </header>
+        
+    </div>
+    
+
+
+</div>
+{% endblock content %}

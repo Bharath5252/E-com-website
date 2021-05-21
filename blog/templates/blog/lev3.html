@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <h1>Level_3-Gear</h1>
+    {% for level in level3s %}
+        <div class="flex flex-warp text-center bg-white rounded-lg shadow-lg items-center justify-center mt-10 mb-20 ml-10"  style="height: 40%;"> 
+            <img class="res-image mx-auto object-cover rounded-lg" src="{{ level.image.url }}" alt="Image here">
+            <div class="flex flex-col items-center justify-center">
+                <h2 class="mr-20">{{ level.name }}</h2>
+                <p class="mr-20">Price: ₹{{ level.price }}</p>
+                <p class="mr-20">Rating: {{ level.rating }}&#9889</p>
+                <a href="/finish><button type="button" class="btn btn-primary mr-20" >Buy</button></a>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock content%}
